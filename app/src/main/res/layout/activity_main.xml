@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="337dp"
+        android:layout_height="310dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <Button
+        android:id="@+id/image_capture_button"
+        android:layout_width="205dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="600dp"
+        android:elevation="2dp"
+        android:text="@string/take_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/calendar_button_main_screen"
+        android:layout_width="114dp"
+        android:layout_height="105dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="44dp"
+        android:elevation="2dp"
+        android:text="@string/Go_to_Calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/go_to_text_module_button"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="52dp"
+        android:elevation="2dp"
+        android:text="@string/text_recognition_tool"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertical_centerline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_centerline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
